@@ -1,164 +1,186 @@
 {
-    "passages": [
-      {
-        "text": "You are standing at the end of a road before a small brick building. Around you is a forest.  A small stream flows out of the building and down a gully.\n\n[[Go North->Forest]]\n[[Go East->Building]]\n[[Go South->Valley]]\n[[Go West->Hill]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "Forest",
-            "pid": "2"
-          },
-          {
-            "name": "Go East",
-            "link": "Building",
-            "pid": "3"
-          },
-          {
-            "name": "Go South",
-            "link": "Valley",
-            "pid": "4"
-          },
-          {
-            "name": "Go West",
-            "link": "Hill",
-            "pid": "5"
-          }
-        ],
-        "name": "Road",
-        "pid": "1",
-        "position": {
-          "x": "412",
-          "y": "189"
+  "passages": [
+    {
+      "text": "You are in your apartment. At this time, a zombie virus outbreak in your city was reported on TV. The government claimed that there was an evacuation point is in a middle school in the south of the city. \n\n[ (1)Prepare to take refuge ]",
+      "links": [
+        {
+          "name": "Prepare to take refuge",
+          "link": "Prepare",
+          "pid": "5"
         }
-      },
-      {
-        "text": "You are in open forest, with a deep valley to one side.\n\n[[Go North->Forest]]\n[[Go East->Building]]\n[[Go South->Road]]\n[[Go West->Hill]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "Forest",
-            "pid": "2"
-          },
-          {
-            "name": "Go East",
-            "link": "Building",
-            "pid": "3"
-          },
-          {
-            "name": "Go South",
-            "link": "Road",
-            "pid": "1"
-          },
-          {
-            "name": "Go West",
-            "link": "Hill",
-            "pid": "5"
-          }
-        ],
-        "name": "Forest",
-        "pid": "2",
-        "position": {
-          "x": "187",
-          "y": "339"
-        }
-      },
-      {
-        "text": "You are inside a building, a well house for a large spring.\n\n[[Go North->Forest]]\n[[Go East->Building]]\n[[Go South->Valley]]\n[[Go West->Road]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "Forest",
-            "pid": "2"
-          },
-          {
-            "name": "Go East",
-            "link": "Building",
-            "pid": "3"
-          },
-          {
-            "name": "Go South",
-            "link": "Valley",
-            "pid": "4"
-          },
-          {
-            "name": "Go West",
-            "link": "Road",
-            "pid": "1"
-          }
-        ],
-        "name": "Building",
-        "pid": "3",
-        "position": {
-          "x": "337",
-          "y": "339"
-        }
-      },
-      {
-        "text": "You are in a valley in the forest beside a stream tumbling along a rocky bed.\n\n[[Go North->Road]]\n[[Go East->Building]]\n[[Go South->Valley]]\n[[Go West->Hill]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "Road",
-            "pid": "1"
-          },
-          {
-            "name": "Go East",
-            "link": "Building",
-            "pid": "3"
-          },
-          {
-            "name": "Go South",
-            "link": "Valley",
-            "pid": "4"
-          },
-          {
-            "name": "Go West",
-            "link": "Hill",
-            "pid": "5"
-          }
-        ],
-        "name": "Valley",
-        "pid": "4",
-        "position": {
-          "x": "487",
-          "y": "339"
-        }
-      },
-      {
-        "text": "You have walked up a hill, still in the forest.  The road slopes back\ndown the other side of the hill.  There is a building in the distance.\n\n[[Go North->Forest]]\n[[Go East->Road]]\n[[Go South->Valley]]\n[[Go West->Hill]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "Forest",
-            "pid": "2"
-          },
-          {
-            "name": "Go East",
-            "link": "Road",
-            "pid": "1"
-          },
-          {
-            "name": "Go South",
-            "link": "Valley",
-            "pid": "4"
-          },
-          {
-            "name": "Go West",
-            "link": "Hill",
-            "pid": "5"
-          }
-        ],
-        "name": "Hill",
-        "pid": "5",
-        "position": {
-          "x": "637",
-          "y": "339"
-        }
+      ],
+      "name": "Start",
+      "pid": "1",
+      "position": {
+        "x": "401",
+        "y": "97"
       }
-    ],
-    "name": "Adventure",
-    "startnode": "1",
-    "creator": "Twine",
-    "creator-version": "2.3.7",
-    "ifid": "1A8FFB75-8072-4382-BCAF-ADFA65B09385"
-  }
+    },
+    {
+      "text": "You picked up your M1911A1, there are 7 rounds in the magazine.\n\n[ (1)Keep preparing ]\n[ (2)Leave the apartment ]",
+      "links": [
+        {
+          "name": "Keep preparing",
+          "link": "Prepare",
+          "pid": "5"
+        },
+        {
+          "name": "Leave the apartment",
+          "link": "Streets",
+          "pid": "3"
+        }
+      ],
+      "name": "Get Gun",
+      "pid": "2",
+      "position": {
+        "x": "210",
+        "y": "321"
+      }
+    },
+    {
+      "text": "You walked out of the apartment, and the street was a mess, full of screams. There are two ways to go to the evacuation point, one is towards the park and the other is towards the main street. Where are you going?\n\n[ (1)Go to the park ]\n[ (2)Go to the main streets ]",
+      "links": [
+        {
+          "name": "Go to the park",
+          "link": "Park",
+          "pid": "6"
+        },
+        {
+          "name": "Go to the main streets",
+          "link": "Main Streets",
+          "pid": "7"
+        }
+      ],
+      "name": "Streets",
+      "pid": "3",
+      "position": {
+        "x": "360",
+        "y": "321"
+      }
+    },
+    {
+      "text": "You tried to call the police, but no one answered.\n\n[ (1)Keep preparing ]\n[ (2)Leave the apartment ]",
+      "links": [
+        {
+          "name": "Keep preparing",
+          "link": "Prepare",
+          "pid": "5"
+        },
+        {
+          "name": "Leave the apartment",
+          "link": "Streets",
+          "pid": "3"
+        }
+      ],
+      "name": "Call Police",
+      "pid": "4",
+      "position": {
+        "x": "529",
+        "y": "319"
+      }
+    },
+    {
+      "text": "What are you going to do now?\n\n[ (1)Pick up your gun ]\n[ (2)Leave your apartment ]\n[ (3)Call the police for help]",
+      "links": [
+        {
+          "name": "Pick up your gun",
+          "link": "Get Gun",
+          "pid": "2"
+        },
+        {
+          "name": "Leave your apartment",
+          "link": "Streets",
+          "pid": "3"
+        },
+        {
+          "name": "Call the police for help",
+          "link": "Call Police",
+          "pid": "4"
+        }
+      ],
+      "name": "Prepare",
+      "pid": "5",
+      "position": {
+        "x": "558",
+        "y": "179"
+      }
+    },
+    {
+      "text": "You have reached the park now, there are many zombies wandering around here.\n\n[ (1)Keep going ]\n[ (2)Go back ]",
+      "links": [
+        {
+          "name": "Keep going",
+          "link": "Main Streets",
+          "pid": "7"
+        },
+        {
+          "name": "Go back",
+          "link": "Streets",
+          "pid": "3"
+        }
+      ],
+      "name": "Park",
+      "pid": "6",
+      "position": {
+        "x": "285",
+        "y": "471"
+      }
+    },
+    {
+      "text": "You are now on the main streets, and many people are fleeing in the direction of the mall.\n\n[ (1)Follow them to the mall ]\n[ (2)Go back ]",
+      "links": [
+        {
+          "name": "Follow them to the mall",
+          "link": "Mall",
+          "pid": "8"
+        },
+        {
+          "name": "Go back",
+          "link": "Streets",
+          "pid": "3"
+        }
+      ],
+      "name": "Main Streets",
+      "pid": "7",
+      "position": {
+        "x": "435",
+        "y": "471"
+      }
+    },
+    {
+      "text": "You are in the mall now, and the helicopter in the sky broadcasts people to hurry up to the school to take refuge.\n\n[ (1)Go to the school ]\n[ (2)Go back ]",
+      "links": [
+        {
+          "name": "Go to the school",
+          "link": "Escape",
+          "pid": "9"
+        },
+        {
+          "name": "Go back",
+          "link": "Main Streets",
+          "pid": "7"
+        }
+      ],
+      "name": "Mall",
+      "pid": "8",
+      "position": {
+        "x": "435",
+        "y": "621"
+      }
+    },
+    {
+      "text": "You finally arrived at the refuge point, and soon the helicopter will carry people away in waves. You can finally relax from the tension, what a nightmare!",
+      "name": "Escape",
+      "pid": "9",
+      "position": {
+        "x": "435",
+        "y": "771"
+      }
+    }
+  ],
+  "name": "Zombie Survival",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.9",
+  "ifid": "4AEAD6AE-FC07-41E7-86AC-8312EBAA1782"
+}
